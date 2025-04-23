@@ -5,9 +5,10 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits<{
-  (e: 'update:busqueda', valor: string): void
+  (e: 'actualizar', payload: string): void
   (e: 'crear'): void
 }>()
+
 </script>
 
 <template>

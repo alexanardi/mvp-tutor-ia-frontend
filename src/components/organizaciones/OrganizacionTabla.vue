@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Organizacion } from '@/types/organizacion'
+//import type { Organizacion } from '@/types/organizacion'
 
 const emit = defineEmits<{
   (e: 'editar', organizacion: Organizacion): void
