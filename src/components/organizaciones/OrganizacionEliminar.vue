@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { Organizacion } from '@/types/organizacion'
 
-const props = defineProps<{
-  organizacion: Organizacion
-}>()
+defineProps<{ organizacion: Organizacion }>()
+
 
 
 

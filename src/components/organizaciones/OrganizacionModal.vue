@@ -2,10 +2,6 @@
 import { ref, watch } from 'vue'
 import type { Organizacion } from '@/types/organizacion'
 
-const props = defineProps<{
-  organizacion: Organizacion | null
-}>()
-
 
 const props = defineProps<{
   modoEdicion: boolean

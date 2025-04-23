@@ -4,9 +4,8 @@ import { api } from '@/utils/api'
 
 import type { Organizacion } from '@/types/organizacion'
 
-const props = defineProps<{
-  organizacion: Organizacion | null
-}>()
+defineProps<{ organizacion: Organizacion }>()
+
 
 
 import { useToast } from 'vue-toastification'
