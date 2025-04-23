@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Organizacion } from '@/types/organizacion'
 
-defineProps<{ organizacion: Organizacion }>()
+defineProps<{ organizaciones: Organizacion }>()
 
 
 
