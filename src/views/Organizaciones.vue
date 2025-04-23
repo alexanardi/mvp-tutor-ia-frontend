@@ -2,6 +2,9 @@
 import { ref, onMounted, computed } from 'vue'
 import { api } from '@/utils/api'
 
+import type { Organizacion } from '@/types/organizacion'
+
+
 import { useToast } from 'vue-toastification'
 const toast = useToast()
 
