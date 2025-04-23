@@ -1,5 +1,5 @@
 export interface Organizacion {
-  id: number
+  id: number | string
   nombre: string
   rut: string
   email_contacto?: string | null

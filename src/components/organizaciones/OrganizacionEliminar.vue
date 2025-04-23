@@ -1,5 +1,11 @@
 <script setup lang="ts">
-//import type { Organizacion } from '@/types/organizacion'
+import type { Organizacion } from '@/types/organizacion'
+
+const props = defineProps<{
+  organizacion: Organizacion
+}>()
+
+
 
 const emit = defineEmits<{
   (e: 'cerrar'): void
