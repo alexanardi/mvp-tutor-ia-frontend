@@ -65,7 +65,7 @@ const router = createRouter({
   routes,
 
   // Controla el comportamiento del scroll al navegar entre páginas
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(_to, _from, savedPosition) {
     if (savedPosition) {
       return savedPosition // si usó el botón "atrás", restaura la posición
     } else {
@@ -75,7 +75,7 @@ const router = createRouter({
 })
 
 // Middleware que se ejecuta antes de cada cambio de ruta
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _from, next) => {
   // Cambia el título del documento según el meta definido en la ruta
   document.title = `${to.meta.title ? to.meta.title + ' | ' : ''}Tutor IA`
 

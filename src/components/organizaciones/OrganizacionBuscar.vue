@@ -23,7 +23,7 @@ const emit = defineEmits<{
       <div class="relative w-full sm:w-64">
         <input
           :value="props.busqueda"
-          @input="emit('update:busqueda', $event.target.value)"
+          @input="emit('actualizar', ($event.target as HTMLInputElement)?.value)"
           type="text"
           placeholder="Buscar organizaciones..."
           class="input pr-10 w-full"

@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import type { Organizacion } from '@/types/organizacion'
 
-const props = defineProps<{
-  organizacion: Organizacion | null
-}>()
-
 const emit = defineEmits<{
   (e: 'cerrar'): void
   (e: 'confirmar'): void

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, watchEffect, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 
 // Estado local para guardar el modo actual (true = dark)
 const isDarkMode = ref(localStorage.getItem('darkMode') === 'true')
