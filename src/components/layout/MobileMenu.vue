@@ -20,7 +20,7 @@ const login = () => {
     name: 'Demo User',
     email: 'demo@example.com'
   })
-  router.push('/organizations')
+  router.push('/organizaciones')
   emit('close')
 }
 
@@ -36,29 +36,29 @@ const logout = () => {
   <div class="md:hidden bg-white dark:bg-gray-800 shadow-md animate-slide-in">
     <div class="px-2 pt-2 pb-3 space-y-1">
       <router-link
-        to="/guide"
+        to="/guia"
         @click="emit('close')"
         class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50
                dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700"
       >
-        Guide
+        Guía
       </router-link>
       <router-link
-        to="/contact"
+        to="/contacto"
         @click="emit('close')"
         class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50
                dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700"
       >
-        Contact
+        Contacto
       </router-link>
       <router-link
         v-if="isLoggedIn"
-        to="/organizations"
+        to="/organizaciones"
         @click="emit('close')"
         class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50
                dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700"
       >
-        Organizations
+        Organizaciones
       </router-link>
 
       <!-- Línea separadora -->
@@ -69,7 +69,7 @@ const logout = () => {
           class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-primary-600 hover:text-primary-800
                  hover:bg-gray-50 dark:text-primary-400 dark:hover:text-primary-300 dark:hover:bg-gray-700"
         >
-          Login
+          Iniciar sesión
         </button>
         <button
           v-else
@@ -77,7 +77,7 @@ const logout = () => {
           class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900
                  hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700"
         >
-          Logout
+          Cerrar sesión
         </button>
       </div>
     </div>
