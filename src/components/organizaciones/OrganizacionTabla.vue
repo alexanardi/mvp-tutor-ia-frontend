@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import type { Organizacion } from '@/types/organizacion'
 
-const { organizaciones } = props
+const { organizaciones } = defineProps<{
+  organizaciones: Organizacion[]
+}>()
 
 const emit = defineEmits<{
   (e: 'editar', organizacion: Organizacion): void
