@@ -31,12 +31,12 @@ const authStore = useAuthStore()
           </router-link>
           <router-link 
             v-else
-            to="/organizations" 
+            to="/organizaciones" 
             class="btn-primary text-center"
           >
-            View Organizations
+            Gestionar Organizaciones
           </router-link>
-          <router-link to="/guide" class="btn-outline text-center">
+          <router-link to="/guia" class="btn-outline text-center">
             Aprender más
           </router-link>
         </div>
