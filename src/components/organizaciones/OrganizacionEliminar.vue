@@ -2,7 +2,7 @@
 import type { Organizacion } from '@/types/organizacion'
 
 const { organizacion } = defineProps<{
-  organizacion: Organizacion
+  organizacion?: Organizacion
 }>()
 
 const emit = defineEmits<{
