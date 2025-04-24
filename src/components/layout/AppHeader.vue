@@ -56,7 +56,7 @@ const isLoggedIn = computed(() => authStore.isLoggedIn)
             @click="toggleMobileMenu"
             class="md:hidden p-2 rounded-md text-gray-500 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-gray-300 dark:hover:bg-gray-700"
           >
-            <span class="sr-only">Open menu</span>
+            <span class="sr-only">Abrir menú</span>
             <!-- Icono hamburguesa -->
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -108,14 +108,14 @@ const isLoggedIn = computed(() => authStore.isLoggedIn)
             @click="login"
             class="hidden md:block ml-2 btn-primary"
           >
-            Login
+            Inciar sesión
           </button>
           <button
             v-else
             @click="logout"
             class="hidden md:block ml-2 btn-outline"
           >
-            Logout
+            Cerrar sesión
           </button>
         </div>
       </div>
