@@ -3,10 +3,17 @@ import { ref, watch } from 'vue'
 import type { Organizacion } from '@/types/organizacion'
 
 
-const props = defineProps<{
-  modoEdicion: boolean
-  organizacion: Organizacion | null
-}>()
+const props = withDefaults(
+  defineProps<{
+    modoEdicion?: boolean
+    organizacion?: Organizacion | null
+  }>(),
+  {
+    modoEdicion: false,
+    organizacion: null
+  }
+)
+
 
 const emit = defineEmits<{
   (e: 'cerrar'): void

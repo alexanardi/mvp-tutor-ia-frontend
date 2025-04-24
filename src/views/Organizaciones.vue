@@ -39,7 +39,7 @@ const organizacionesFiltradas = computed(() => {
 // Cargar desde API
 onMounted(async () => {
   try {
-    const response = await api.get('/organizaciones')
+    const response = await api.get('/organizaciones/')
     organizaciones.value = response.data
   } catch (error) {
     console.error('Error al cargar organizaciones', error)
@@ -73,7 +73,7 @@ const guardarOrganizacion = async (data: { nombre: string; rut: string }) => {
       if (index !== -1) organizaciones.value[index] = { ...organizaciones.value[index], ...data }
       toast.success('Organización actualizada')
     } else {
-      const response = await api.post('/organizaciones', { ...data, email_contacto: null })
+      const response = await api.post('/organizaciones/', { ...data, email_contacto: null })
       organizaciones.value.unshift(response.data)
       toast.success('Organización creada')
     }
