@@ -2,7 +2,7 @@
 import type { Organizacion } from '@/types/organizacion'
 
 const props = defineProps<{
-  organizaciones: Organizacion[]
+  organizaciones?: Organizacion[]
 }>()
 
 const emit = defineEmits<{
