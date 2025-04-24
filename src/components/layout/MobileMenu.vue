@@ -92,7 +92,7 @@ const logout = () => {
                 @click="emit('close')"
                 class="flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-primary-400 dark:hover:bg-gray-700"
               >
-                <Users class="w-4 h-4" /> Organizaciones
+              <Building2 class="w-4 h-4" /> Organizaciones
               </router-link>
             </div>
           </div>
